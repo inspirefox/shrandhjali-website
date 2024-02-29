@@ -1,0 +1,73 @@
+#full-name {
+    text-align: start;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#ayojak-names {
+    width: 90%;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.ayojak-name {
+    text-align: end;
+}
+
+.ayojak-phoneno {
+    text-align: start;
+}
+
+.ayojak-name {
+    font-weight: bold;
+}
+
+.individual-name {
+    justify-content: center;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.d-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.w-partial {
+    width: 70%;
+}
+
+.w-max {
+    width: 100%;
+}
+
+.wrap {
+    text-wrap: wrap;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+
+.primary-container {
+    margin: 15px;
+    align-self: center;
+    padding: 0 12px;
+    height: 25px;
+    display: grid;
+    place-content: center;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#address {
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}

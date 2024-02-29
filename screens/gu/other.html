@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>અન્ય</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/other.css" />
+
+    <script defer src="../../scripts/main.js"></script>
+    <script defer src="../../scripts/other.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script type="module" src="../../scripts/htmltocanvas.js"></script>
+
+    <!-- SEO -->
+    <meta property="og:title" content="Create Custom Besnu Card" />
+    <meta property="twitter:title" content="Create Custom Besnu Card" />
+    <meta property="og:image" content="assets/img/1.png" />
+    <meta property="twitter:image" content="assets/img/1.png" />
+    <meta
+      property="og:description"
+      content="Create Shrandhjali card and customize it however you want"
+    />
+    <meta
+      property="twitter:description"
+      content="Create Shrandhjali card and customize it however you want"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../../assets/icons/shradhanjali.svg" height="35px" />
+      </a>
+      <a href="https://www.inspirefox.com/" target="_blank">
+        <img
+          src="../../assets/icons/inspirefox.svg"
+          height="35px"
+          class="inspirefox"
+        />
+      </a>
+    </header>
+
+    <section class="sec-design">
+      <a href="pick_type.html" class="back">
+        <img src="../../assets/icons/arrow.svg" height="20px" />
+        અન્ય
+      </a>
+
+      <div class="shradhanjali_img_inffo">
+        <div class="shradhanjali_img">
+          <div style="border-radius: 0" id="image-frame" class="design-view">
+            <img id="image-frame-img" src="../../assets/img/1.png" />
+            <div id="image-container">
+              <h1 translate="no" style="font-weight: bold" id="title">
+                ।।
+                <span></span>
+                ।।
+              </h1>
+
+              <div id="profile-img-container">
+                <img id="profile-img" />
+              </div>
+
+              <div class="main-body">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                  "
+                  id="full-name"
+                >
+                  <h1>સ્વ.</h1>
+                  &nbsp;
+                  <h1 translate="no"></h1>
+                </div>
+                <h4 translate="no" id="description"></h4>
+              </div>
+            </div>
+          </div>
+          <div class="design_edit">
+            <div class="img_size">
+              <img
+                onclick="onFrameChange(event)"
+                src="../../assets/img/1.png"
+                alt=""
+              />
+            </div>
+            <div class="img_size">
+              <img
+                onclick="onFrameChange(event)"
+                src="../../assets/img/2.png"
+                alt=""
+              />
+            </div>
+            <div class="img_size">
+              <img
+                onclick="onFrameChange(event)"
+                src="../../assets/img/3.png"
+                alt=""
+              />
+            </div>
+            <div class="img_size">
+              <img
+                onclick="onFrameChange(event)"
+                src="../../assets/img/4.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="shradhanjali_inffo">
+          <div class="container">
+            <form id="primary-form">
+              <div style="gap: 20px" class="d-row">
+                <div
+                  style="width: 70%"
+                  class="upload_file upload_file_container"
+                >
+                  <h1>ફોટો :</h1>
+                  <input
+                    onchange="handleFileChange(event)"
+                    type="file"
+                    name="image"
+                    accept="image/*"
+                  />
+                </div>
+                <div
+                  id="tab-container"
+                  class="upload_file upload_file_container"
+                >
+                  <div onclick="onTabSelected(event, 1)" class="tab selected">
+                    <img
+                      style="pointer-events: none"
+                      src="../../assets/icons/circle.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div onclick="onTabSelected(event, 0)" class="tab">
+                    <img
+                      style="pointer-events: none"
+                      src="../../assets/icons/square.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <input
+                id="title-field"
+                name="title"
+                type="text"
+                placeholder="શીર્ષક"
+              />
+
+              <input
+                id="full-name-field"
+                type="text"
+                name="full-name"
+                placeholder="પૂરું નામ"
+              />
+
+              <textarea
+                id="description-field"
+                rows="4"
+                name="description"
+                placeholder="વર્ણન"
+              ></textarea>
+
+              <div class="update-button-container">
+                <button id="download_img" type="button">
+                  ડાઉનલોડ
+                  <div class="img_icone_download">
+                    <img src="../../assets/icons/download.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer translate="no">
+      <p>
+        Made with&nbsp;<img src="../../assets/icons/love.svg" height="20px" />
+        &nbsp;by&nbsp;
+        <a href="https://www.inspirefox.com/" target="_blank"> Inspirefox </a>
+      </p>
+    </footer>
+  </body>
+</html>
