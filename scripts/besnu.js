@@ -20,12 +20,24 @@ const row = (index) => {
     input2.placeholder = phoneNoPlaceholder;
     input2.oninput = (e) => onAyojakNameChange(e);
 
+    const deleteEle = document.createElement('div');
+    deleteEle.classList.add('delete-container');
+
+    deleteEle.onclick = (e) => deleteField(e);
+
+    const deleteImage = document.createElement('img');
+    deleteImage.src = "../../assets/icons/delete.svg";
+    deleteImage.alt = "delete";
+
+    deleteEle.appendChild(deleteImage);
+
     const div = document.createElement('div');
 
     div.classList.add("d_flex");
 
     div.appendChild(input1);
     div.appendChild(input2);
+    div.appendChild(deleteEle);
 
     const parent = document.getElementById('ayojak-names');
 

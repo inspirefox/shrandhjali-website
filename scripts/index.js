@@ -1,4 +1,4 @@
-const langs = ['english', 'hindi', 'gujarati', 'marathi'];
+const langs = ['english', 'hindi', 'gujarati', 'marathi', 'bengali'];
 const langsContainer = document.querySelector('.lang-btns');
 
 const searchInput = document.getElementById('search-input');

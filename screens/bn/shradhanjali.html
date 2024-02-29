@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shradhanjali</title>
+    <title>শ্রদ্ধাঞ্জলি</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/shrandhjali.css" />
@@ -17,21 +17,21 @@
     <script type="module" src="../../scripts/htmltocanvas.js"></script>
 
     <!-- SEO -->
-    <meta property="og:title" content="Create Shrandhjali Card" />
-    <meta property="twitter:title" content="Create Shrandhjali Card" />
+    <meta property="og:title" content="ট্রিবিউট কার্ড তৈরি করুন" />
+    <meta property="twitter:title" content="ট্রিবিউট কার্ড তৈরি করুন" />
     <meta property="og:image" content="assets/img/1.png" />
     <meta property="twitter:image" content="assets/img/1.png" />
     <meta
       property="og:description"
-      content="Create Shrandhjali card by filling details"
-    />
-    <meta
-      property="twitter:description"
-      content="Create Shrandhjali card by filling details"
+      content="বিবরণ পূরণ করে একটি শ্রদ্ধা কার্ড তৈরি করুন"
     />
     <meta
       name="description"
-      content="Create Shrandhjali card by filling details"
+      content="বিবরণ পূরণ করে একটি শ্রদ্ধা কার্ড তৈরি করুন"
+    />
+    <meta
+      property="twitter:description"
+      content="বিবরণ পূরণ করে একটি শ্রদ্ধা কার্ড তৈরি করুন"
     />
   </head>
 
@@ -57,7 +57,7 @@
     <section class="sec-design">
       <a href="pick_type.html" class="back">
         <img alt="funeral" src="../../assets/icons/arrow.svg" height="20px" />
-        Shrandhjali
+        শ্রদ্ধাঞ্জলি
       </a>
 
       <div class="shradhanjali_img_inffo">
@@ -84,16 +84,16 @@
                 class="d-row justify-center"
                 style="margin-top: 3%; margin-bottom: 4%; gap: 5px"
               >
-                <h3 id="sva">divine.</h3>
+                <h3 id="sva">ছবি.</h3>
                 <h3 translate="no" id="full-name"></h3>
               </div>
               <div
                 style="align-self: center; justify-content: center"
                 class="d-row w-partial"
               >
-                <h5>તા.</h5>
+                <h5>তারিখ.</h5>
                 <h5 translate="no" id="death-date"></h5>
-                <h5>, ( age. years.</h5>
+                <h5>, ( উমার. বছর.</h5>
                 <h5 translate="no" id="age"></h5>
                 <h5>&nbsp;)</h5>
               </div>
@@ -103,32 +103,32 @@
                 style="margin-top: 10%; text-align: center"
                 class="wrap w-max"
               >
-                It is informed with deep sorrow that
-                <span translate="no" id="full-name-2"></span>passed away on
+                প্রয়াত হওয়াটা খুবই দুঃখজনক
+                <span translate="no" id="full-name-2"></span>
+                এর
                 <span translate="no" id="death-date-2"></span>
-                at
+                <span id="death-datetime">সকাল</span>
                 <span translate="no" id="death-time"></span>
-                <span id="death-datetime">in the morning</span>
-                has attained heaven
+                ইন্তেকাল করেছেন.
               </h6>
 
               <h6 style="margin-top: 3%; text-align: center">
-                "May the merciful Supreme Soul, the ultimate destination of the
-                divine soul, bestow peace" is the English translation of the
-                provided text."
+                "দয়াময় ঈশ্বর ধন্য ঐশ্বরিক আত্মাকে শান্তি দান করুন, প্রভুর চরণে
+                প্রার্থনা।"
               </h6>
 
-              <h5 class="primary-container">Funeral</h5>
+              <h5 class="primary-container">শোক</h5>
 
               <h5
                 id="besnu-description"
                 style="text-align: center; width: 75%; align-self: center"
               >
-                The Funeral is scheduled on
-                <span translate="no" id="funeral-date"></span>,
-                <span id="funeral-datetime">in the morning</span>
-                at
+                শোক সভা
+                <span translate="no" id="funeral-date"></span>
+                ,প্রতি
+                <span id="funeral-datetime">সকাল</span>
                 <span translate="no" id="funeral-time"></span>
+                এটা নির্ধারিত হয়.
               </h5>
               <div translate="no" id="ayojak-names">
                 <div class="individual-name">
@@ -138,7 +138,7 @@
               </div>
 
               <div style="margin-bottom: 0px" class="primary-container">
-                Place
+                স্থান
               </div>
 
               <h5 translate="no" id="address"></h5>
@@ -181,7 +181,7 @@
           <form id="primary-form">
             <div class="d-row frame-container" style="gap: 20px">
               <div class="upload_file upload_file_container">
-                <h1>Photo :</h1>
+                <h1>ছবি :</h1>
                 <input
                   onchange="handleFileChange(event)"
                   type="file"
@@ -190,7 +190,7 @@
                 />
               </div>
               <div id="tab-container" class="upload_file upload_file_container">
-                <h1>Shape :</h1>
+                <h1>আকার :</h1>
                 <div onclick="onTabSelected(event, 1)" class="tab selected">
                   <img
                     style="pointer-events: none"
@@ -213,17 +213,17 @@
               id="title-field"
               name="title"
               type="text"
-              placeholder="Title"
+              placeholder="বিষয়"
             />
 
-            <label>Death :</label>
+            <label>মৃত্যু :</label>
 
             <input
               oninput="inputFieldChangeMine(event)"
               id="full-name-field"
               type="text"
               name="full-name"
-              placeholder="Full name"
+              placeholder="পুরো নাম"
             />
 
             <div class="d_flex">
@@ -233,7 +233,7 @@
                 type="text"
                 class="input_text_02"
                 name="death-date"
-                placeholder="date"
+                placeholder="তারিখ"
               />
 
               <input
@@ -242,7 +242,7 @@
                 type="text"
                 class="input_text_02"
                 name="death-time"
-                placeholder="time"
+                placeholder="সময়"
               />
 
               <select
@@ -251,18 +251,10 @@
                 name="death-datetime"
                 class="input_text_02 select"
               >
-                <option class="option" value="In the morning">
-                  In the morning
-                </option>
-                <option class="option" value="In the afternoon">
-                  In the afternoon
-                </option>
-                <option class="option" value="In the evening">
-                  In the evening
-                </option>
-                <option class="option" value="In the night">
-                  In the night
-                </option>
+                <option class="option" value="সকাল">সকাল</option>
+                <option class="option" value="বিকেল">বিকেল</option>
+                <option class="option" value="সন্ধ্যা">সন্ধ্যা</option>
+                <option class="option" value="রাত">রাত</option>
               </select>
 
               <input
@@ -270,12 +262,12 @@
                 type="number"
                 class="input_text_02"
                 name="age"
-                placeholder="age"
+                placeholder="বয়স"
               />
             </div>
 
             <label style="border-top: 1px solid #686868; padding-top: 1rem">
-              Funeral :
+              অন্ত্যেষ্টিক্রিয়া :
             </label>
             <div class="d_flex">
               <input
@@ -284,7 +276,7 @@
                 id="funeral-date-field"
                 class="input_text_02"
                 name="funeral-date"
-                placeholder="date"
+                placeholder="তারিখ"
               />
 
               <input
@@ -293,7 +285,7 @@
                 type="text"
                 class="input_text_02"
                 name="funeral-time"
-                placeholder="time"
+                placeholder="সময়"
               />
 
               <select
@@ -302,18 +294,10 @@
                 name="funeral-datetime"
                 class="input_text_02 select"
               >
-                <option class="option" value="In the morning">
-                  In the morning
-                </option>
-                <option class="option" value="In the afternoon">
-                  In the afternoon
-                </option>
-                <option class="option" value="In the evening">
-                  In the evening
-                </option>
-                <option class="option" value="In the night">
-                  In the night
-                </option>
+                <option class="option" value="সকাল">সকাল</option>
+                <option class="option" value="বিকেল">বিকেল</option>
+                <option class="option" value="সন্ধ্যা">সন্ধ্যা</option>
+                <option class="option" value="রাত">রাত</option>
               </select>
             </div>
 
@@ -324,7 +308,7 @@
                   type="text"
                   class="input_text text_name"
                   name="name[0]"
-                  placeholder="Name"
+                  placeholder="নাম"
                 />
 
                 <input
@@ -332,7 +316,7 @@
                   type="tel"
                   class="input_text_02 mobileno"
                   name="mobile-no[0]"
-                  placeholder="Mobile Number"
+                  placeholder="মোবাইল নম্বর"
                 />
               </div>
             </div>
@@ -340,17 +324,17 @@
             <input
               id="add-extra-names-button"
               type="button"
-              value="Add More Name"
+              value="আরো সংখ্যা যোগ করুন"
             />
             <textarea
               oninput="inputFieldChange(event)"
               rows="4"
               name="address"
-              placeholder="Address"
+              placeholder="ঠিকানা"
             ></textarea>
             <div class="update-button-container">
               <button id="download_img" type="button">
-                Download Image
+                ডাউনলোড
                 <div class="img_icone_download">
                   <img src="../../assets/icons/download.svg" alt="download" />
                 </div>

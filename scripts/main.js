@@ -152,3 +152,19 @@ function onTabSelected(event, index) {
 
     frame.style.borderRadius = (index) == 0 ? '0' : '50%';
 }
+
+function deleteField(e) {
+    const extraNames = document.getElementById('extra-names');
+
+    const child = e.target.parentElement;
+
+    const index = Array.prototype.indexOf.call(extraNames.children, child);
+
+    extraNames.removeChild(child);
+
+    const ayojakNames = document.getElementById('ayojak-names');
+
+    const ayochild = ayojakNames.children[index];
+
+    ayojakNames.removeChild(ayochild);
+}

@@ -117,7 +117,7 @@ textarea {
   align-items: center;
   text-decoration: none;
   color: #000;
-  max-width: 140px;
+  max-width: max-content;
   margin: 0 auto 15px;
   padding: 15px;
   box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
@@ -612,7 +612,7 @@ div.container {
   flex-grow: 1;
   top: 20%;
   height: 100%;
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -782,4 +782,37 @@ span {
 .upload_file.upload_file_container>h1 {
   text-wrap: nowrap;
   margin: 0;
+}
+
+#extra-names>:not(:first-child) {
+  border-top: 1px solid #686868;
+  position: relative;
+}
+
+#extra-names>:not(:first-child)> :nth-child(2) {
+  padding-right: 40px;
+}
+
+#extra-names>* {
+  padding: 5px 0;
+}
+
+.delete-container {
+  position: absolute;
+  right: 10px;
+  background-color: white;
+  height: 17px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  padding: 5px;
+  z-index: 5;
+  background-color: red;
+  border-radius: 5px;
+  top: 30%;
+}
+
+img {
+  pointer-events: none;
 }

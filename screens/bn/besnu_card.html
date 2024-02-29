@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="hi">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>शोक कार्ड</title>
+    <title>শোক কার্ড</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/besnu.css" />
@@ -17,16 +17,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
     <!-- SEO -->
-    <meta property="og:title" content="बेसनू कार्ड तयार करा" />
-    <meta property="twitter:title" content="बेसनू कार्ड तयार करा" />
+    <meta property="og:title" content="বেসনু কার্ড তৈরি করুন" />
+    <meta property="twitter:title" content="বেসনু কার্ড তৈরি করুন" />
     <meta property="og:image" content="assets/img/1.png" />
     <meta property="twitter:image" content="assets/img/1.png" />
-    <meta property="og:description" content="तपशील भरून बेसनू कार्ड तयार करा" />
+    <meta property="og:description" content="विवरण भरकर बेसनु कार्ड बनाएं" />
     <meta
       property="twitter:description"
-      content="तपशील भरून बेसनू कार्ड तयार करा"
+      content="বিস্তারিত পূরণ করে বেসনু কার্ড তৈরি করুন"
     />
-    <meta name="description" content="तपशील भरून बेसनू कार्ड तयार करा" />
+    <meta
+      name="description"
+      content="বিস্তারিত পূরণ করে বেসনু কার্ড তৈরি করুন"
+    />
   </head>
 
   <body>
@@ -51,7 +54,7 @@
     <section class="sec-design">
       <a href="pick_type.html" class="back">
         <img alt="funeral" src="../../assets/icons/arrow.svg" height="20px" />
-        शोक कार्ड
+        শোক কার্ড
       </a>
 
       <div class="shradhanjali_img_inffo">
@@ -76,16 +79,16 @@
                   class="d-row justify-center"
                   style="margin-top: 3%; margin-bottom: 4%; gap: 5px"
                 >
-                  <h3 id="sva">स्व.</h3>
+                  <h3 id="sva">ছবি.</h3>
                   <h3 translate="no" id="full-name"></h3>
                 </div>
                 <div
                   style="align-self: center; justify-content: center"
                   class="d-row w-partial"
                 >
-                  <h5>ता.</h5>
+                  <h5>তারিখ.</h5>
                   <h5 translate="no" id="death-date"></h5>
-                  <h5>, ( उ. साल.</h5>
+                  <h5>, ( উমার. বছর.</h5>
                   <h5 translate="no" id="age"></h5>
                   <h5>&nbsp;)</h5>
                 </div>
@@ -95,35 +98,35 @@
                   style="margin-top: 10%; text-align: center"
                   class="wrap w-max"
                 >
-                  हे खूप दुःखदायक आहे की, कै
+                  প্রয়াত হওয়াটা খুবই দুঃখজনক
                   <span translate="no" id="full-name-2"></span>
-                  च्या
+                  এর
                   <span translate="no" id="death-date-2"></span>
-                  <span id="death-datetime">सकाळ</span>
+                  <span id="death-datetime">সকাল</span>
                   <span translate="no" id="death-time"></span>
-                  निधन झाले आहे.
+                  ইন্তেকাল করেছেন.
                 </h6>
 
                 <h6 style="margin-top: 3%; text-align: center">
-                  "दयाळू देव धन्य दिव्य आत्म्यास शांती देवो, परमेश्वराच्या चरणी
-                  प्रार्थना."
+                  "দয়াময় ঈশ্বর ধন্য ঐশ্বরিক আত্মাকে শান্তি দান করুন, প্রভুর
+                  চরণে প্রার্থনা।"
                 </h6>
 
-                <h5 class="primary-container">शोक</h5>
+                <h5 class="primary-container">শোক</h5>
 
                 <h5
                   id="besnu-description"
                   style="text-align: center; width: 75%; align-self: center"
                 >
-                  शोक बैठक
+                  শোক সভা
                   <span translate="no" id="besnu-date"></span>
-                  ,को
-                  <span id="besnu-datetime">सकाळ</span>
-                  ,को
+                  ,প্রতি
+                  <span id="besnu-datetime">সকাল</span>
+                  ,প্রতি
                   <span translate="no" id="besnu-starttime"></span>
-                  से
+                  থেকে
                   <span translate="no" id="besnu-endtime"></span>
-                  येथे नियोजित आहे.
+                  বেলা ১২টা পর্যন্ত নির্ধারিত রয়েছে।
                 </h5>
                 <div translate="no" id="ayojak-names">
                   <div class="individual-name">
@@ -133,7 +136,7 @@
                 </div>
 
                 <div style="margin-bottom: 0px" class="primary-container">
-                  जागा
+                  স্থান
                 </div>
 
                 <h5 translate="no" id="address"></h5>
@@ -176,7 +179,7 @@
             <form id="primary-form">
               <div class="d-row frame-container" style="gap: 20px">
                 <div class="upload_file upload_file_container">
-                  <h1>चित्र :</h1>
+                  <h1>ছবি :</h1>
                   <input
                     onchange="handleFileChange(event)"
                     type="file"
@@ -188,7 +191,7 @@
                   id="tab-container"
                   class="upload_file upload_file_container"
                 >
-                  <h1>आकार :</h1>
+                  <h1>আকার :</h1>
                   <div onclick="onTabSelected(event, 1)" class="tab selected">
                     <img
                       style="pointer-events: none"
@@ -211,16 +214,16 @@
                 id="title-field"
                 name="title"
                 type="text"
-                placeholder="विषय"
+                placeholder="বিষয়"
               />
 
-              <label>मृत्यू :</label>
+              <label>মৃত্যু :</label>
               <input
                 id="full-name-field"
                 oninput="inputFieldChangeMine(event)"
                 type="text"
                 name="full-name"
-                placeholder="पूर्ण नाव"
+                placeholder="পুরো নাম"
               />
 
               <div class="d_flex">
@@ -230,7 +233,7 @@
                   type="text"
                   class="input_text"
                   name="death-date"
-                  placeholder="तारीख"
+                  placeholder="তারিখ"
                 />
 
                 <input
@@ -239,7 +242,7 @@
                   type="text"
                   class="input_text_02"
                   name="death-time"
-                  placeholder="वेळ"
+                  placeholder="সময়"
                 />
 
                 <select
@@ -248,10 +251,10 @@
                   name="death-datetime"
                   class="input_text_02 select"
                 >
-                  <option class="option" value="सकाळ">सकाळ</option>
-                  <option class="option" value="दुपारी">दुपारी</option>
-                  <option class="option" value="संध्याकाळ">संध्याकाळ</option>
-                  <option class="option" value="रात्रि">रात्रि</option>
+                  <option class="option" value="সকাল">সকাল</option>
+                  <option class="option" value="বিকেল">বিকেল</option>
+                  <option class="option" value="সন্ধ্যা">সন্ধ্যা</option>
+                  <option class="option" value="রাত">রাত</option>
                 </select>
 
                 <input
@@ -260,12 +263,12 @@
                   type="number"
                   class="input_text_02"
                   name="age"
-                  placeholder="वय"
+                  placeholder="বয়স"
                 />
               </div>
 
               <label style="border-top: 1px solid #686868; padding-top: 1rem">
-                अंत्यसंस्कार :
+                অন্ত্যেষ্টিক্রিয়া :
               </label>
               <div class="d_flex">
                 <input
@@ -274,7 +277,7 @@
                   type="text"
                   class="input_text"
                   name="besnu-date"
-                  placeholder="तारीख"
+                  placeholder="তারিখ"
                 />
 
                 <select
@@ -283,10 +286,10 @@
                   name="besnu-datetime"
                   class="input_text_02 select"
                 >
-                  <option class="option" value="सकाळ">सकाळ</option>
-                  <option class="option" value="दुपारी">दुपारी</option>
-                  <option class="option" value="संध्याकाळ">संध्याकाळ</option>
-                  <option class="option" value="रात्रि">रात्रि</option>
+                  <option class="option" value="সকাল">সকাল</option>
+                  <option class="option" value="বিকেল">বিকেল</option>
+                  <option class="option" value="সন্ধ্যা">সন্ধ্যা</option>
+                  <option class="option" value="রাত">রাত</option>
                 </select>
 
                 <input
@@ -295,7 +298,7 @@
                   type="text"
                   class="input_text_02"
                   name="besnu-starttime"
-                  placeholder="सुरवातीची वेळ"
+                  placeholder="সময় শুরু"
                 />
 
                 <input
@@ -304,7 +307,7 @@
                   type="text"
                   class="input_text_02"
                   name="besnu-endtime"
-                  placeholder="कालबाह्यता वेळ"
+                  placeholder="মেয়াদ শেষ হওয়ার সময়"
                 />
               </div>
 
@@ -313,7 +316,7 @@
                 oninput="inputFieldChange(event)"
                 rows="4"
                 name="address"
-                placeholder="पता"
+                placeholder="ঠিকানা"
               ></textarea>
 
               <div id="extra-names" class="d_grid">
@@ -323,7 +326,7 @@
                     type="text"
                     class="input_text text_name"
                     name="name[0]"
-                    placeholder="नाव"
+                    placeholder="নাম"
                   />
 
                   <input
@@ -331,7 +334,7 @@
                     type="tel"
                     class="input_text_02 mobileno"
                     name="mobile-no[0]"
-                    placeholder="मोबाइल नंबर"
+                    placeholder="মোবাইল নম্বর"
                   />
                 </div>
               </div>
@@ -339,11 +342,11 @@
               <input
                 id="add-extra-names-button"
                 type="button"
-                value="अधिक संख्या जोडा"
+                value="আরো সংখ্যা যোগ করুন"
               />
               <div class="update-button-container">
                 <button id="download_img" type="button">
-                  डाउनलोड
+                  ডাউনলোড
                   <div class="img_icone_download">
                     <img src="../../assets/icons/download.svg" alt="download" />
                   </div>
