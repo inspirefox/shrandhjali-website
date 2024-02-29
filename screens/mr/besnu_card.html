@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="mr">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>शोक</title>
+    <title>शोक कार्ड</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/besnu.css" />
@@ -17,16 +17,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
     <!-- SEO -->
-    <meta property="og:title" content="बेसनु कार्ड बनाएं" />
-    <meta property="twitter:title" content="बेसनु कार्ड बनाएं" />
+    <meta property="og:title" content="बेसनू कार्ड तयार करा" />
+    <meta property="twitter:title" content="बेसनू कार्ड तयार करा" />
     <meta property="og:image" content="assets/img/1.png" />
     <meta property="twitter:image" content="assets/img/1.png" />
-    <meta property="og:description" content="विवरण भरकर बेसनु कार्ड बनाएं" />
+    <meta property="og:description" content="तपशील भरून बेसनू कार्ड तयार करा" />
     <meta
       property="twitter:description"
-      content="विवरण भरकर बेसनु कार्ड बनाएं"
+      content="तपशील भरून बेसनू कार्ड तयार करा"
     />
-    <meta name="description" content="विवरण भरकर बेसनु कार्ड बनाएं" />
+    <meta name="description" content="तपशील भरून बेसनू कार्ड तयार करा" />
   </head>
 
   <body>
@@ -51,7 +51,7 @@
     <section class="sec-design">
       <a href="pick_type.html" class="back">
         <img alt="funeral" src="../../assets/icons/arrow.svg" height="20px" />
-        शोक
+        शोक कार्ड
       </a>
 
       <div class="shradhanjali_img_inffo">
@@ -95,18 +95,18 @@
                   style="margin-top: 10%; text-align: center"
                   class="wrap w-max"
                 >
-                  यह अत्यंत दुख की बात है कि स्वर्गीय
+                  हे खूप दुःखदायक आहे की, कै
                   <span translate="no" id="full-name-2"></span>
-                  का
+                  च्या
                   <span translate="no" id="death-date-2"></span>
-                  <span id="death-datetime">सुबह</span>
+                  <span id="death-datetime">सकाळ</span>
                   <span translate="no" id="death-time"></span>
-                  को निधन हो गया है।
+                  निधन झाले आहे.
                 </h6>
 
                 <h6 style="margin-top: 3%; text-align: center">
-                  "कृपाशील परमात्मा सद्गत दिव्य आत्मा को शांति प्रदान करें, ऐसी
-                  प्रभु के पादों में प्रार्थना।"
+                  "दयाळू देव धन्य दिव्य आत्म्यास शांती देवो, परमेश्वराच्या चरणी
+                  प्रार्थना."
                 </h6>
 
                 <h5 class="primary-container">शोक</h5>
@@ -118,12 +118,12 @@
                   शोक बैठक
                   <span translate="no" id="besnu-date"></span>
                   ,को
-                  <span id="besnu-datetime">सुबह</span>
+                  <span id="besnu-datetime">सकाळ</span>
                   ,को
                   <span translate="no" id="besnu-starttime"></span>
                   से
                   <span translate="no" id="besnu-endtime"></span>
-                  बजे तक निर्धारित है।
+                  येथे नियोजित आहे.
                 </h5>
                 <div translate="no" id="ayojak-names">
                   <div class="individual-name">
@@ -133,7 +133,7 @@
                 </div>
 
                 <div style="margin-bottom: 0px" class="primary-container">
-                  स्थान
+                  जागा
                 </div>
 
                 <h5 translate="no" id="address"></h5>
@@ -176,7 +176,7 @@
             <form id="primary-form">
               <div class="d-row frame-container" style="gap: 20px">
                 <div class="upload_file upload_file_container">
-                  <h1>तस्वीर :</h1>
+                  <h1>चित्र :</h1>
                   <input
                     onchange="handleFileChange(event)"
                     type="file"
@@ -211,16 +211,16 @@
                 id="title-field"
                 name="title"
                 type="text"
-                placeholder="शीर्षक"
+                placeholder="विषय"
               />
 
-              <label>मौत :</label>
+              <label>मृत्यू :</label>
               <input
                 id="full-name-field"
                 oninput="inputFieldChangeMine(event)"
                 type="text"
                 name="full-name"
-                placeholder="पूरा नाम"
+                placeholder="पूर्ण नाव"
               />
 
               <div class="d_flex">
@@ -239,7 +239,7 @@
                   type="text"
                   class="input_text_02"
                   name="death-time"
-                  placeholder="समय"
+                  placeholder="वेळ"
                 />
 
                 <select
@@ -248,9 +248,9 @@
                   name="death-datetime"
                   class="input_text_02 select"
                 >
-                  <option class="option" value="सुबह">सुबह</option>
-                  <option class="option" value="दोपहर">दोपहर</option>
-                  <option class="option" value="शाम">शाम</option>
+                  <option class="option" value="सकाळ">सकाळ</option>
+                  <option class="option" value="दुपारी">दुपारी</option>
+                  <option class="option" value="संध्याकाळ">संध्याकाळ</option>
                   <option class="option" value="रात्रि">रात्रि</option>
                 </select>
 
@@ -260,12 +260,12 @@
                   type="number"
                   class="input_text_02"
                   name="age"
-                  placeholder="उम्र"
+                  placeholder="वय"
                 />
               </div>
 
               <label style="border-top: 1px solid #686868; padding-top: 1rem">
-                अंतिम संस्कार :
+                अंत्यसंस्कार :
               </label>
               <div class="d_flex">
                 <input
@@ -283,9 +283,9 @@
                   name="besnu-datetime"
                   class="input_text_02 select"
                 >
-                  <option class="option" value="सुबह">सुबह</option>
-                  <option class="option" value="दोपहर">दोपहर</option>
-                  <option class="option" value="शाम">शाम</option>
+                  <option class="option" value="सकाळ">सकाळ</option>
+                  <option class="option" value="दुपारी">दुपारी</option>
+                  <option class="option" value="संध्याकाळ">संध्याकाळ</option>
                   <option class="option" value="रात्रि">रात्रि</option>
                 </select>
 
@@ -295,7 +295,7 @@
                   type="text"
                   class="input_text_02"
                   name="besnu-starttime"
-                  placeholder="शुरू समय"
+                  placeholder="सुरवातीची वेळ"
                 />
 
                 <input
@@ -304,7 +304,7 @@
                   type="text"
                   class="input_text_02"
                   name="besnu-endtime"
-                  placeholder="समाप्ति समय"
+                  placeholder="कालबाह्यता वेळ"
                 />
               </div>
 
@@ -341,9 +341,9 @@
                   name="sutak-datetime"
                   class="input_text_02 select"
                 >
-                  <option class="option" value="सुबह">सुबह</option>
-                  <option class="option" value="दोपहर">दोपहर</option>
-                  <option class="option" value="शाम">शाम</option>
+                  <option class="option" value="सकाळ">सकाळ</option>
+                  <option class="option" value="दुपारी">दुपारी</option>
+                  <option class="option" value="संध्याकाळ">संध्याकाळ</option>
                   <option class="option" value="रात्रि">रात्रि</option>
                 </select>
 
@@ -353,7 +353,7 @@
                   type="text"
                   class="input_text_02"
                   name="sutak-starttime"
-                  placeholder="शुरू समय"
+                  placeholder="सुरवातीची वेळ"
                 />
 
                 <input
@@ -362,7 +362,7 @@
                   type="text"
                   class="input_text_02"
                   name="sutak-endtime"
-                  placeholder="समाप्ति समय"
+                  placeholder="कालबाह्यता वेळ"
                 />
               </div>
 
@@ -373,7 +373,7 @@
                     type="text"
                     class="input_text text_name"
                     name="name[0]"
-                    placeholder="नाम"
+                    placeholder="नाव"
                   />
 
                   <input
@@ -389,7 +389,7 @@
               <input
                 id="add-extra-names-button"
                 type="button"
-                value="अधिक संख्या जोड़ें"
+                value="अधिक संख्या जोडा"
               />
               <div class="update-button-container">
                 <button id="download_img" type="button">

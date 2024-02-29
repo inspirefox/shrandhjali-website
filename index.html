@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
@@ -16,6 +16,8 @@
       rel="stylesheet"
     />
 
+    <script defer src="scripts/index.js"></script>
+
     <!-- SEO -->
     <meta property="og:title" content="Create Shrandhjali" />
     <meta property="twitter:title" content="Create Shrandhjali" />
@@ -23,6 +25,10 @@
     <meta property="twitter:image" content="assets/img/1.png" />
     <meta
       property="og:description"
+      content="Create Shrandhjali, Besnu card in English, Gujarati and many more langauges."
+    />
+    <meta
+      name="description"
       content="Create Shrandhjali, Besnu card in English, Gujarati and many more langauges."
     />
     <meta
@@ -37,10 +43,11 @@
   >
     <header>
       <a href="/index.html">
-        <img src="assets/icons/shradhanjali.svg" height="35px" />
+        <img alt="logo" src="assets/icons/shradhanjali.svg" height="35px" />
       </a>
       <a href="https://www.inspirefox.com/" target="_blank">
         <img
+          alt="inspirefox"
           src="assets/icons/inspirefox.svg"
           height="35px"
           class="inspirefox"
@@ -51,15 +58,22 @@
     <section class="outer-container" style="flex-grow: 1">
       <div class="con-box sec-lang">
         <h1>Select Language</h1>
-        <input type="search" name="Search" placeholder="search" />
-        <div class="lang-btns">
+        <input
+          autofocus
+          id="search-input"
+          autocomplete="off"
+          type="search"
+          name="Search"
+          placeholder="search"
+        />
+        <div selected-index="-1" class="lang-btns">
           <a href="./screens/en/pick_type.html">English</a>
           <a href="./screens/hi/pick_type.html">Hindi</a>
           <a href="./screens/gu/pick_type.html">Gujarati</a>
           <a href="./screens/mr/pick_type.html">Marathi</a>
-          <a href="./screens/bn/pick_type.html">Bengali</a>
+          <!-- <a href="./screens/bn/pick_type.html">Bengali</a>
           <a href="./screens/kn/pick_type.html">Kannad</a>
-          <a href="./screens/ml/pick_type.html">malyali</a>
+          <a href="./screens/ml/pick_type.html">malyali</a> -->
         </div>
       </div>
     </section>

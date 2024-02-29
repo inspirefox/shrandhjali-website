@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
@@ -29,15 +29,21 @@
       property="twitter:description"
       content="Create Besnu card by filling details"
     />
+    <meta name="description" content="Create Besnu card by filling details" />
   </head>
 
   <body>
     <header>
       <a href="../../index.html">
-        <img src="../../assets/icons/shradhanjali.svg" height="35px" />
+        <img
+          alt="logo"
+          src="../../assets/icons/shradhanjali.svg"
+          height="35px"
+        />
       </a>
       <a href="https://www.inspirefox.com/" target="_blank">
         <img
+          alt="inspirefox"
           src="../../assets/icons/inspirefox.svg"
           height="35px"
           class="inspirefox"
@@ -47,14 +53,22 @@
 
     <section class="sec-design">
       <a href="pick_type.html" class="back">
-        <img src="../../assets/icons/arrow.svg" height="20px" />
+        <img
+          alt="funeral-card"
+          src="../../assets/icons/arrow.svg"
+          height="20px"
+        />
         Funeral Card
       </a>
 
       <div class="shradhanjali_img_inffo">
         <div class="shradhanjali_img">
           <div style="border-radius: 0" id="image-frame" class="design-view">
-            <img id="image-frame-img" src="../../assets/img/1.png" />
+            <img
+              alt="frame"
+              id="image-frame-img"
+              src="../../assets/img/1.png"
+            />
             <div id="image-container">
               <h1 translate="no" style="font-weight: bold" id="title">
                 ।।
@@ -131,30 +145,30 @@
           <div class="design_edit">
             <div class="img_size">
               <img
+                alt="frame-1"
                 onclick="onFrameChange(event)"
                 src="../../assets/img/1.png"
-                alt=""
               />
             </div>
             <div class="img_size">
               <img
+                alt="frame-2"
                 onclick="onFrameChange(event)"
                 src="../../assets/img/2.png"
-                alt=""
               />
             </div>
             <div class="img_size">
               <img
+                alt="frame-3"
                 onclick="onFrameChange(event)"
                 src="../../assets/img/3.png"
-                alt=""
               />
             </div>
             <div class="img_size">
               <img
+                alt="frame-4"
                 onclick="onFrameChange(event)"
                 src="../../assets/img/4.png"
-                alt=""
               />
             </div>
           </div>
@@ -162,11 +176,8 @@
         <div class="shradhanjali_inffo">
           <div class="container">
             <form id="primary-form">
-              <div style="gap: 20px" class="d-row">
-                <div
-                  style="width: 70%"
-                  class="upload_file upload_file_container"
-                >
+              <div class="d-row frame-container" style="gap: 20px">
+                <div class="upload_file upload_file_container">
                   <h1>Image :</h1>
                   <input
                     onchange="handleFileChange(event)"
@@ -179,18 +190,19 @@
                   id="tab-container"
                   class="upload_file upload_file_container"
                 >
+                  <h1>Shape :</h1>
                   <div onclick="onTabSelected(event, 1)" class="tab selected">
                     <img
+                      alt="circle"
                       style="pointer-events: none"
                       src="../../assets/icons/circle.svg"
-                      alt=""
                     />
                   </div>
                   <div onclick="onTabSelected(event, 0)" class="tab">
                     <img
+                      alt="square"
                       style="pointer-events: none"
                       src="../../assets/icons/square.svg"
-                      alt=""
                     />
                   </div>
                 </div>
@@ -409,7 +421,11 @@
                 <button id="download_img" type="button">
                   Download Image
                   <div class="img_icone_download">
-                    <img src="../../assets/icons/download.svg" alt="" />
+                    <img
+                      alt="download"
+                      src="../../assets/icons/download.svg"
+                      alt="download"
+                    />
                   </div>
                 </button>
               </div>
@@ -422,6 +438,7 @@
     <footer translate="no">
       <p>
         Made with&nbsp;<img
+          alt="love"
           src="../../assets/icons/love.svg"
           height="20px"
         />&nbsp;by&nbsp;<a href="https://www.inspirefox.com/" target="_blank"

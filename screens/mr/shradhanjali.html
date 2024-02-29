@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="mr">
   <head>
     <meta charset="utf-8" />
     <meta name="google" content="notranslate" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>શ્રદ્ધાંજલિ</title>
+    <title>श्रद्धांजलि</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/shrandhjali.css" />
@@ -17,19 +17,19 @@
     <script type="module" src="../../scripts/htmltocanvas.js"></script>
 
     <!-- SEO -->
-    <meta property="og:title" content="શ્રાંધજલિ કાર્ડ બનાવો" />
-    <meta property="twitter:title" content="શ્રાંધજલિ કાર્ડ બનાવો" />
+    <meta property="og:title" content="श्राद्धजली कार्ड तयार करा" />
+    <meta property="twitter:title" content="श्राद्धजली कार्ड तयार करा" />
     <meta property="og:image" content="assets/img/1.png" />
     <meta property="twitter:image" content="assets/img/1.png" />
     <meta
       property="og:description"
-      content="વિગતો ભરીને શ્રાંધજલિ કાર્ડ બનાવો"
+      content="तपशील भरून श्रद्धाजली कार्ड तयार करा"
     />
+    <meta name="description" content="तपशील भरून श्रद्धाजली कार्ड तयार करा" />
     <meta
       property="twitter:description"
-      content="વિગતો ભરીને શ્રાંધજલિ કાર્ડ બનાવો"
+      content="तपशील भरून श्रद्धाजली कार्ड तयार करा"
     />
-    <meta name="description" content="વિગતો ભરીને શ્રાંધજલિ કાર્ડ બનાવો" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
     <section class="sec-design">
       <a href="pick_type.html" class="back">
         <img alt="funeral" src="../../assets/icons/arrow.svg" height="20px" />
-        શ્રદ્ધાંજલિ
+        श्रद्धांजलि
       </a>
 
       <div class="shradhanjali_img_inffo">
@@ -81,16 +81,16 @@
                 class="d-row justify-center"
                 style="margin-top: 3%; margin-bottom: 4%; gap: 5px"
               >
-                <h3 id="sva">સ્વ.</h3>
+                <h3 id="sva">स्व.</h3>
                 <h3 translate="no" id="full-name"></h3>
               </div>
               <div
                 style="align-self: center; justify-content: center"
                 class="d-row w-partial"
               >
-                <h5>તા.</h5>
+                <h5>ता.</h5>
                 <h5 translate="no" id="death-date"></h5>
-                <h5>, ( ઉ. વર્ષ.</h5>
+                <h5>, ( उ. साल.</h5>
                 <h5 translate="no" id="age"></h5>
                 <h5>&nbsp;)</h5>
               </div>
@@ -100,33 +100,32 @@
                 style="margin-top: 10%; text-align: center"
                 class="wrap w-max"
               >
-                દિલગિરી સાથે જાણવાણું કે
+                हे खूप दुःखदायक आहे की, कै
                 <span translate="no" id="full-name-2"></span>
+                च्या
                 <span translate="no" id="death-date-2"></span>
-                અને
+                <span id="death-datetime">सकाळ</span>
                 <span translate="no" id="death-time"></span>
-                ના રોજ
-                <span id="death-datetime">સવારે</span>
-                સ્વર્ગવાસ થયેલ છે
+                निधन झाले आहे.
               </h6>
 
               <h6 style="margin-top: 3%; text-align: center">
-                "પરમકૃપાળુ પરમાત્મા સદ્દગત દિવ્ય આત્માને શાંતિ પ્રદાન કરે એવી
-                પ્રભુના ચરણોમાં પ્રાર્થના"
+                "दयाळू देव धन्य दिव्य आत्म्यास शांती देवो, परमेश्वराच्या चरणी
+                प्रार्थना."
               </h6>
 
-              <h5 class="primary-container">બેસણું</h5>
+              <h5 class="primary-container">शोक</h5>
 
               <h5
                 id="besnu-description"
                 style="text-align: center; width: 75%; align-self: center"
               >
-                બેસણું
+                शोक बैठक
                 <span translate="no" id="funeral-date"></span>
-                ના રોજ
-                <span id="funeral-datetime"></span>
+                ,को
+                <span id="funeral-datetime">सकाळ</span>
                 <span translate="no" id="funeral-time"></span>
-                કલાકે રાખેલ છે.
+                येथे नियोजित आहे.
               </h5>
               <div translate="no" id="ayojak-names">
                 <div class="individual-name">
@@ -136,7 +135,7 @@
               </div>
 
               <div style="margin-bottom: 0px" class="primary-container">
-                સ્થળ
+                जागा
               </div>
 
               <h5 translate="no" id="address"></h5>
@@ -179,7 +178,7 @@
           <form id="primary-form">
             <div class="d-row frame-container" style="gap: 20px">
               <div class="upload_file upload_file_container">
-                <h1>ફોટો :</h1>
+                <h1>चित्र :</h1>
                 <input
                   onchange="handleFileChange(event)"
                   type="file"
@@ -188,7 +187,7 @@
                 />
               </div>
               <div id="tab-container" class="upload_file upload_file_container">
-                <h1>આકાર :</h1>
+                <h1>आकार :</h1>
                 <div onclick="onTabSelected(event, 1)" class="tab selected">
                   <img
                     style="pointer-events: none"
@@ -211,17 +210,17 @@
               id="title-field"
               name="title"
               type="text"
-              placeholder="શીર્ષક"
+              placeholder="विषय"
             />
 
-            <label>મરણ :</label>
+            <label>मृत्यू :</label>
 
             <input
               oninput="inputFieldChangeMine(event)"
               id="full-name-field"
               type="text"
               name="full-name"
-              placeholder="પૂરું નામ"
+              placeholder="पूर्ण नाव"
             />
 
             <div class="d_flex">
@@ -231,7 +230,7 @@
                 type="text"
                 class="input_text_02"
                 name="death-date"
-                placeholder="તારીખ"
+                placeholder="तारीख"
               />
 
               <input
@@ -240,7 +239,7 @@
                 type="text"
                 class="input_text_02"
                 name="death-time"
-                placeholder="સમય"
+                placeholder="वेळ"
               />
 
               <select
@@ -249,10 +248,10 @@
                 name="death-datetime"
                 class="input_text_02 select"
               >
-                <option class="option" value="સવારે">સવારે</option>
-                <option class="option" value="બપોરે">બપોરે</option>
-                <option class="option" value="સાંજે">સાંજે</option>
-                <option class="option" value="રાત્રે">રાત્રે</option>
+                <option class="option" value="सकाळ">सकाळ</option>
+                <option class="option" value="दुपारी">दुपारी</option>
+                <option class="option" value="संध्याकाळ">संध्याकाळ</option>
+                <option class="option" value="रात्रि">रात्रि</option>
               </select>
 
               <input
@@ -260,12 +259,12 @@
                 type="number"
                 class="input_text_02"
                 name="age"
-                placeholder="ઉમર"
+                placeholder="वय"
               />
             </div>
 
             <label style="border-top: 1px solid #686868; padding-top: 1rem">
-              અંતિમ સંસ્કાર :
+              अंत्यसंस्कार :
             </label>
             <div class="d_flex">
               <input
@@ -274,7 +273,7 @@
                 id="funeral-date-field"
                 class="input_text_02"
                 name="funeral-date"
-                placeholder="તારીખ"
+                placeholder="तारीख"
               />
 
               <input
@@ -283,7 +282,7 @@
                 type="text"
                 class="input_text_02"
                 name="funeral-time"
-                placeholder="સમય"
+                placeholder="वेळ"
               />
 
               <select
@@ -292,10 +291,10 @@
                 name="funeral-datetime"
                 class="input_text_02 select"
               >
-                <option class="option" value="સવારે">સવારે</option>
-                <option class="option" value="બપોરે">બપોરે</option>
-                <option class="option" value="સાંજે">સાંજે</option>
-                <option class="option" value="રાત્રે">રાત્રે</option>
+                <option class="option" value="सकाळ">सकाळ</option>
+                <option class="option" value="दुपारी">दुपारी</option>
+                <option class="option" value="संध्याकाळ">संध्याकाळ</option>
+                <option class="option" value="रात्रि">रात्रि</option>
               </select>
             </div>
 
@@ -306,7 +305,7 @@
                   type="text"
                   class="input_text text_name"
                   name="name[0]"
-                  placeholder="નામ"
+                  placeholder="नाव"
                 />
 
                 <input
@@ -314,7 +313,7 @@
                   type="tel"
                   class="input_text_02 mobileno"
                   name="mobile-no[0]"
-                  placeholder="મોબાઇલ"
+                  placeholder="मोबाइल नंबर"
                 />
               </div>
             </div>
@@ -322,17 +321,17 @@
             <input
               id="add-extra-names-button"
               type="button"
-              value="વધુ નંબર ઉમેરો"
+              value="अधिक संख्या जोड़ें"
             />
             <textarea
               oninput="inputFieldChange(event)"
               rows="4"
               name="address"
-              placeholder="સરનામું"
+              placeholder="पता"
             ></textarea>
             <div class="update-button-container">
               <button id="download_img" type="button">
-                ડાઉનલોડ
+                डाउनलोड
                 <div class="img_icone_download">
                   <img src="../../assets/icons/download.svg" alt="download" />
                 </div>

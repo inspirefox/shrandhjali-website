@@ -146,9 +146,9 @@ function onTabSelected(event, index) {
     if (isSelected) return;
 
     event.target.classList.add('selected');
-    parent.children[index].classList.remove('selected');
+    parent.children[index + 1].classList.remove('selected');
 
     const frame = document.getElementById('profile-img-container');
 
-    frame.style.borderRadius = index == 0 ? '0' : '50%';
+    frame.style.borderRadius = (index) == 0 ? '0' : '50%';
 }

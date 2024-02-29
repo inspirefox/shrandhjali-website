@@ -37,6 +37,7 @@ header a .inspirefox:hover {
   border-radius: 10px;
   max-width: 600px;
   margin: 50px auto;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -332,7 +333,6 @@ div.container {
 
 .sec-design .upload_file {
   background-color: white;
-  width: max-content;
   border-radius: 10px;
   box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
 }
@@ -458,25 +458,19 @@ div.container {
 
 @media(max-width:768px) {
 
-  .sec-design .upload_file {
-    width: 96%;
-  }
-
   .sec-design div.container {
     margin: 50px 0;
     /* width: 60%; */
   }
 
   .sec-design {
-    margin: 25px auto;
+    margin: 25px 0px;
+    padding: 0;
   }
 
 }
 
 @media(max-width:576px) {
-  .sec-design .upload_file {
-    width: 95%;
-  }
 
   .sec-design {
     margin: 20px auto;
@@ -487,17 +481,12 @@ div.container {
   }
 }
 
-@media(max-width:480px) {
-  .sec-design .upload_file {
-    width: 91%;
-  }
-
-}
+@media(max-width:480px) {}
 
 .outer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 
 .design-view .img_size {
@@ -573,15 +562,13 @@ div.container {
   gap: 10px;
   align-items: center;
   padding: 0 20px;
-  height: 70px;
-  padding-top: 10px;
+  height: 80px;
   overflow: hidden;
 }
 
 .upload_file_container h1 {
   line-clamp: 1;
   flex: 2;
-  padding-top: 10px;
 }
 
 .upload_file_container input {
@@ -655,17 +642,16 @@ input[type='file'], input[type='color'] {
   background-color: rgb(241, 241, 241);
 }
 
-.tab:first-child {
+.tab:nth-child(2) {
   border-radius: 10px 0 0 10px;
 }
 
 #tab-container {
-  width: 30% !important;
   gap: 0;
   display: flex;
   justify-content: center;
   height: 80px;
-  padding: 0;
+  padding: 0 20px;
   align-items: center;
 }
 
@@ -752,4 +738,48 @@ a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
 
 span {
   display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .typ-btns {
+    flex-direction: column;
+    justify-items: stretch;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .sec-lang {
+    margin: 50px 40px;
+  }
+
+  .lang-btns, .typ-btns {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .frame-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  #tab-container {
+    justify-content: start;
+  }
+}
+
+.frame-container>* {
+  flex-grow: 1;
+}
+
+.a-hover {
+  background: #F0451F !important;
+  color: #fff !important;
+}
+
+.upload_file.upload_file_container>h1 {
+  text-wrap: nowrap;
+  margin: 0;
 }
