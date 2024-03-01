@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ಸಂತಾಪ ಪತ್ರ</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/besnu.css" />
+
+    <script defer src="../../scripts/main.js"></script>
+    <script defer src="../../scripts/besnu.js"></script>
+
+    <script type="module" src="../../scripts/htmltocanvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <!-- SEO -->
+    <meta property="og:title" content="ಬೇಸಾನು ಕಾರ್ಡ್ ಮಾಡಿ" />
+    <meta property="twitter:title" content="ಬೇಸಾನು ಕಾರ್ಡ್ ಮಾಡಿ" />
+    <meta property="og:image" content="assets/img/1.png" />
+    <meta property="twitter:image" content="assets/img/1.png" />
+    <meta
+      property="og:description"
+      content="ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಬೇಸಾನು ಕಾರ್ಡ್ ರಚಿಸಿ"
+    />
+    <meta
+      property="twitter:description"
+      content="ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಬೇಸಾನು ಕಾರ್ಡ್ ರಚಿಸಿ"
+    />
+    <meta
+      name="description"
+      content="ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಬೇಸಾನು ಕಾರ್ಡ್ ರಚಿಸಿ"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img
+          alt="logo"
+          src="../../assets/icons/shradhanjali.svg"
+          height="35px"
+        />
+      </a>
+      <a href="https://www.inspirefox.com/" target="_blank">
+        <img
+          src="../../assets/icons/inspirefox.svg"
+          height="35px"
+          class="inspirefox"
+          alt="inspirfox"
+        />
+      </a>
+    </header>
+
+    <section class="sec-design">
+      <a href="pick_type.html" class="back">
+        <img alt="funeral" src="../../assets/icons/arrow.svg" height="20px" />
+        ಶೋಕಾಚರಣೆ
+      </a>
+
+      <div class="shradhanjali_img_inffo">
+        <div class="shradhanjali_img">
+          <div style="border-radius: 0" id="image-frame" class="design-view">
+            <img
+              alt="frame"
+              id="image-frame-img"
+              src="../../assets/img/1.png"
+            />
+            <div id="image-container">
+              <h1 translate="no" style="font-weight: bold" id="title">
+                ।।
+                <span></span>
+                ।।
+              </h1>
+              <div id="profile-img-container">
+                <img id="profile-img" />
+              </div>
+              <div class="main-body">
+                <div
+                  class="d-row justify-center"
+                  style="margin-top: 3%; margin-bottom: 4%; gap: 5px"
+                >
+                  <h3 id="sva">ಸ್ವರ್ಗ.</h3>
+                  <h3 translate="no" id="full-name"></h3>
+                </div>
+                <div
+                  style="align-self: center; justify-content: center"
+                  class="d-row w-partial"
+                >
+                  <h5>ताದಿನಾಂಕ.</h5>
+                  <h5 translate="no" id="death-date"></h5>
+                  <h5>, ( ವಯ. ವರ್ಷ.</h5>
+                  <h5 translate="no" id="age"></h5>
+                  <h5>&nbsp;)</h5>
+                </div>
+
+                <h6
+                  id="dilgiri"
+                  style="margin-top: 10%; text-align: center"
+                  class="wrap w-max"
+                >
+                  ತಡವಾಗಿರುವುದು ತುಂಬಾ ಬೇಸರದ ಸಂಗತಿ
+                  <span translate="no" id="full-name-2"></span>
+                  ಆಫ್
+                  <span translate="no" id="death-date-2"></span>
+                  <span id="death-datetime">ಬೆಳಗ್ಗೆ</span>
+                  <span translate="no" id="death-time"></span>
+                  ತೀರಿಹೋಗಿದೆ.
+                </h6>
+
+                <h6 style="margin-top: 3%; text-align: center">
+                  "ಕರುಣಾಮಯಿ ದೇವರು ಆಶೀರ್ವದಿಸಿದ ದಿವ್ಯ ಆತ್ಮಕ್ಕೆ ಶಾಂತಿಯನ್ನು ನೀಡಲಿ,
+                  ಭಗವಂತನ ಪಾದದಲ್ಲಿ ಪ್ರಾರ್ಥನೆ."
+                </h6>
+
+                <h5 class="primary-container">ಶೋಕಾಚರಣೆ</h5>
+
+                <h5
+                  id="besnu-description"
+                  style="text-align: center; width: 75%; align-self: center"
+                >
+                  ಸಂತಾಪ ಸಭೆ
+                  <span translate="no" id="besnu-date"></span>
+                  ,ಗೆ
+                  <span id="besnu-datetime">ಬೆಳಗ್ಗೆ</span>
+                  ,ಗೆ
+                  <span translate="no" id="besnu-starttime"></span>
+                  ಇಂದ
+                  <span translate="no" id="besnu-endtime"></span>
+                  ವರೆಗೆ ನಿಗದಿಪಡಿಸಲಾಗಿದೆ.
+                </h5>
+                <div translate="no" id="ayojak-names">
+                  <div class="individual-name">
+                    <h5 class="ayojak-name"></h5>
+                    <h5 class="ayojak-phoneno"></h5>
+                  </div>
+                </div>
+
+                <div style="margin-bottom: 0px" class="primary-container">
+                  ಸ್ಥಳ
+                </div>
+
+                <h5 translate="no" id="address"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="design_edit">
+            <div class="img_size">
+              <img
+                alt="frame-1"
+                onclick="onFrameChange(event)"
+                src="../../assets/img/1.png"
+              />
+            </div>
+            <div class="img_size">
+              <img
+                alt="frame-2"
+                onclick="onFrameChange(event)"
+                src="../../assets/img/2.png"
+              />
+            </div>
+            <div class="img_size">
+              <img
+                alt="frame-3"
+                onclick="onFrameChange(event)"
+                src="../../assets/img/3.png"
+              />
+            </div>
+            <div class="img_size">
+              <img
+                alt="frame-4"
+                onclick="onFrameChange(event)"
+                src="../../assets/img/4.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="shradhanjali_inffo">
+          <div class="container">
+            <form id="primary-form">
+              <div class="d-row frame-container" style="gap: 20px">
+                <div class="upload_file upload_file_container">
+                  <h1>ಚಿತ್ರ :</h1>
+                  <input
+                    onchange="handleFileChange(event)"
+                    type="file"
+                    name="image"
+                    accept="image/*"
+                  />
+                </div>
+                <div
+                  id="tab-container"
+                  class="upload_file upload_file_container"
+                >
+                  <h1>ಗಾತ್ರ :</h1>
+                  <div onclick="onTabSelected(event, 1)" class="tab selected">
+                    <img
+                      style="pointer-events: none"
+                      alt="circle"
+                      src="../../assets/icons/circle.svg"
+                    />
+                  </div>
+                  <div onclick="onTabSelected(event, 0)" class="tab">
+                    <img
+                      style="pointer-events: none"
+                      alt="square"
+                      src="../../assets/icons/square.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <input
+                oninput="inputFieldChangeMine(event)"
+                id="title-field"
+                name="title"
+                type="text"
+                placeholder="ವಿಷಯ"
+              />
+
+              <label>ಸಾವು :</label>
+              <input
+                id="full-name-field"
+                oninput="inputFieldChangeMine(event)"
+                type="text"
+                name="full-name"
+                placeholder="ಪೂರ್ಣ ಹೆಸರು"
+              />
+
+              <div class="d_flex">
+                <input
+                  id="death-date-field"
+                  oninput="inputFieldChangeMine(event)"
+                  type="text"
+                  class="input_text"
+                  name="death-date"
+                  placeholder="ದಿನಾಂಕ"
+                />
+
+                <input
+                  id="death-time-field"
+                  oninput="inputFieldChangeMine(event)"
+                  type="text"
+                  class="input_text_02"
+                  name="death-time"
+                  placeholder="ಸಮಯ"
+                />
+
+                <select
+                  id="death-datetime-field"
+                  onchange="inputFieldChangeMine(event)"
+                  name="death-datetime"
+                  class="input_text_02 select"
+                >
+                  <option class="option" value="ಬೆಳಗ್ಗೆ">ಬೆಳಗ್ಗೆ</option>
+                  <option class="option" value="ಮಧ್ಯಾಹ್ನ">ಮಧ್ಯಾಹ್ನ</option>
+                  <option class="option" value="ಸಂಜೆ">ಸಂಜೆ</option>
+                  <option class="option" value="ರಾತ್ರಿ">ರಾತ್ರಿ</option>
+                </select>
+
+                <input
+                  id="age-field"
+                  oninput="inputFieldChange(event)"
+                  type="number"
+                  class="input_text_02"
+                  name="age"
+                  placeholder="ವಯಸ್ಸು"
+                />
+              </div>
+
+              <label style="border-top: 1px solid #686868; padding-top: 1rem">
+                ಅಂತ್ಯಕ್ರಿಯೆ :
+              </label>
+              <div class="d_flex">
+                <input
+                  id="besnu-date-field"
+                  oninput="inputFieldChangeMine(event)"
+                  type="text"
+                  class="input_text"
+                  name="besnu-date"
+                  placeholder="ದಿನಾಂಕ"
+                />
+
+                <select
+                  id="besnu-datetime-field"
+                  onchange="inputFieldChangeMine(event)"
+                  name="besnu-datetime"
+                  class="input_text_02 select"
+                >
+                  <option class="option" value="ಬೆಳಗ್ಗೆ">ಬೆಳಗ್ಗೆ</option>
+                  <option class="option" value="ಮಧ್ಯಾಹ್ನ">ಮಧ್ಯಾಹ್ನ</option>
+                  <option class="option" value="ಸಂಜೆ">ಸಂಜೆ</option>
+                  <option class="option" value="ರಾತ್ರಿ">ರಾತ್ರಿ</option>
+                </select>
+
+                <input
+                  id="besnu-starttime-field"
+                  oninput="inputFieldChangeMine(event)"
+                  type="text"
+                  class="input_text_02"
+                  name="besnu-starttime"
+                  placeholder="ಆರಂಭವಾಗುವ"
+                />
+
+                <input
+                  id="besnu-endtime-field"
+                  oninput="inputFieldChangeMine(event)"
+                  type="text"
+                  class="input_text_02"
+                  name="besnu-endtime"
+                  placeholder="ಮುಕ್ತಾಯ ಸಮಯ"
+                />
+              </div>
+
+              <textarea
+                id="address-field"
+                oninput="inputFieldChange(event)"
+                rows="4"
+                name="address"
+                placeholder="ವಿಳಾಸ"
+              ></textarea>
+
+              <div id="extra-names" class="d_grid">
+                <div class="d_flex">
+                  <input
+                    oninput="onAyojakNameChange(event)"
+                    type="text"
+                    class="input_text text_name"
+                    name="name[0]"
+                    placeholder="ಹೆಸರು"
+                  />
+
+                  <input
+                    oninput="onAyojakNameChange(event)"
+                    type="tel"
+                    class="input_text_02 mobileno"
+                    name="mobile-no[0]"
+                    placeholder="ಮೊಬೈಲ್ ನಂಬರ"
+                  />
+                </div>
+              </div>
+
+              <input
+                id="add-extra-names-button"
+                type="button"
+                value="ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಗಳನ್ನು ಸೇರಿಸಿ"
+              />
+              <div class="update-button-container">
+                <button id="download_img" type="button">
+                  ಡೌನ್ಲೋಡ್
+                  <div class="img_icone_download">
+                    <img src="../../assets/icons/download.svg" alt="download" />
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer translate="no">
+      <p>
+        Made with&nbsp;<img
+          src="../../assets/icons/love.svg"
+          height="20px"
+          alt="love"
+        />&nbsp;by&nbsp;<a href="https://www.inspirefox.com/" target="_blank"
+          >Inspirefox</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

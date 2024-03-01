@@ -813,6 +813,6 @@ span {
   top: 30%;
 }
 
-img {
+#extra-names>.d_flex>.delete-container>img {
   pointer-events: none;
 }
